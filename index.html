@@ -14,13 +14,19 @@
     <script>
         
         console.log("Hello, World!") ;
+
         let name = prompt("Enter Name...") ;
+        console.log(`oh wow, looks like your name is ${name}...`)
+
         alert(`Hello, ${name}!`) ;
         let age = prompt("Enter age...") ;
-        let favouriteColour = prompt(`Hello, ${name} who is age ${age}. 
-        What is your favourite colour?`);
-        alert(`I have gathered that your name is ${name}, your age is ${age}, 
-        and that your favourite colour is ${favouriteColour}. Have a nice day :)`)
+        console.log(`...and your age is ${age}...`);
+
+        let favouriteColour = prompt(`Hello, ${name} who is age ${age}. What is your favourite colour?`);
+        console.log(`ooh I am also a fan of ${favouriteColour}!`)
+
+        alert(`I have gathered that your name is ${name}, your age is ${age}, and that your favourite colour is ${favouriteColour}. How interesting! Have a nice day :)`)
+        
         document.writeln("THIS COMPUTER WILL NOW EXPLODE...")
 
 
