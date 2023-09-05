@@ -6,14 +6,55 @@
     </head>
 
 <body>
+<div>CHAD's BIG GIVEAWAY</div
 
+    <label for="doors">Pick a door => </label>
+        <select id="doors">
+        <option value="">Choose one</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>    
+        </select>
 
+        <p></p>
+
+    
+    
 
 
 
     <script>
+        const select = document.querySelector("select");
+        const para = document.querySelector("p");
         
-        console.log("Hello, World!") ;
+        select.addEventListener("change", openDoor) ;
+
+        function openDoor () {
+        const choice = select.value; 
+
+
+        if (choice==1) {
+            para.textContent = 'OMG you win a car!!' ;
+        }
+        else if (choice==2) {
+            para.textContent ='OMG you win a jar!!' ;
+        }
+        else if (choice==3) {
+            para.textContent ='OMG you win a guitar!!' ;
+        }
+    
+    }
+        
+
+
+
+
+
+
+
+
+        
+        /*console.log("Hello, World!") ;
 
         let name = prompt("Enter Name...") ;
         console.log(`oh wow, looks like your name is ${name}...`)
@@ -27,7 +68,9 @@
 
         alert(`I have gathered that your name is ${name}, your age is ${age}, and that your favourite colour is ${favouriteColour}. How interesting! Have a nice day :)`)
         
-        document.writeln("THIS COMPUTER WILL NOW EXPLODE...")
+        document.writeln("THIS COMPUTER WILL NOW EXPLODE...") */
+
+
 
 
     </script>
